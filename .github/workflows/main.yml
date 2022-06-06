@@ -41,7 +41,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
-        run: |
+      - run: |
           cd client
           npm install
           npm run build --if-present
